@@ -1,0 +1,118 @@
+@import './utils.css';
+
+.services {
+    padding: 10rem 0;
+    justify-content: center;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container {
+    margin-bottom: 4rem;
+}
+
+.section-heading {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.section-heading span{
+    color: var(--primary);
+}
+
+.services .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.services .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    width: 20rem;
+    margin: 4rem 1.2rem;
+    padding: 3rem 2rem;
+    position: relative;
+    transition: 250ms ease-in-out;
+    cursor: pointer;
+}
+
+.services .cards .card:hover {
+    background-image: linear-gradient( var(--card-hover), var(--dark) );
+    box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.5);
+
+}
+.services .cards .card:hover h2 {
+    color: whitesmoke;
+}
+.services .cards .card:hover p {
+    color: var(--ternary);
+}
+
+.services .cards .card img {
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    padding: 1rem;
+}
+
+.services .cards .card h2 {
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.services .cards .card p {
+    font-family: 'Lato', sans-serif;
+    color: var(--light);
+}
+
+
+@media (max-width:900px) {
+    .services {
+        padding: 5rem 0;
+    }
+
+    .services .cards {
+        width: 100%;
+    }
+}
+
+@media (max-width:750px) {
+    .services {
+        padding: 5rem 2rem;
+    }
+
+}
+
+@media (max-width:350px) {
+    .services .cards .card img {
+        height: 30%;
+        top: -3rem;
+    }
+}
+
+@media (max-width:320px) {
+    .services .cards .card img {
+        height: 25%;
+        top: -2.5rem;
+    }
+}
+

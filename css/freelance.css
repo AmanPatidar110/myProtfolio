@@ -1,0 +1,191 @@
+@import './utils.css';
+
+
+section.freelance {
+    text-align: center;
+    padding: 14rem 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+      url("../images/camera.png");
+    color: var(--ternary);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 80%, 0 100%);
+
+}
+
+.freelance h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+    line-height: 2.2rem;
+}
+
+.freelance p {
+    margin-bottom: 2.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.clients {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.review-slider {
+    border: 4px solid var(--light);
+    border-radius: 1.5rem;
+    width: 50%;
+    height: 30rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--secondary);
+}
+
+.slide {
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: slide 1s ease-in-out forwards;
+    display: none;
+    position: relative;
+    height: 90%;
+}
+
+.slide img, .slide p {
+    margin-bottom: 2rem;
+}
+
+.slide img {
+    width: 8rem;
+    height: 8rem;
+    border: 1px solid var(--secondary);
+    border-radius: 50%;
+    background-color: var(--light);
+}
+
+
+.slideAway {
+    animation: slideAw 1s ease-in-out forwards;
+}
+
+.indicator {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indicator div {
+    width: 1rem;
+    height: 0.4rem;
+    border-radius: 20px;
+    background-color: var(--secondary);
+    margin: 0.2rem;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.indicator .activeIndicator {
+    background-color: var(--primary);
+    width: 2rem;
+}
+
+@keyframes slide{
+    0%{
+        opacity: 0.1;
+        transform: translateX(100rem);
+	}
+    50% {
+        opacity: 0.5;
+    }
+	100%{
+        opacity: 1;
+	}
+}
+
+@keyframes slideAw{
+    0%{
+    }
+	100%{
+        opacity: 0.5;
+        transform: translateX(-100rem);
+        
+	}
+}
+
+
+
+
+
+@media (max-width: 900px) {
+    .review-slider {
+        width: 70%;
+        height: 30rem;
+    }
+}
+
+@media (max-width: 750px) {
+    section.freelance {
+        padding: 10rem 0;
+    }
+
+    .freelance p, .freelance h1, .clients header p {
+        margin: 1.5rem;
+    }
+}
+
+@media (max-width: 580px) {
+
+    section.freelance {
+        padding: 5rem 0;
+    }
+
+    section.freelance {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 90%, 0 100%);
+    
+    }
+
+.review-slider {
+    width: 85%;
+    height: 30rem;
+}
+    
+} 
+
+
+@media (max-width: 480px) {
+
+    .review-slider {
+        width: 92%;
+        height: 37rem;
+    }
+
+    .freelance h1{
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media (max-width: 360px) {
+
+.clients {
+    padding: 0.2rem;
+}
+}
+
+@media (max-width: 360px) {
+
+    .review-slider {
+        width: 92%;
+    height: 38rem;
+}
+
+.clients {
+    padding: 0.2rem;
+}
+}

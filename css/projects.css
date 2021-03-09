@@ -1,0 +1,127 @@
+@import './utils.css';
+
+
+section.works {
+    margin-top: 10rem;
+    padding: 7rem 0;
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+section.works .container { 
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.project-card {
+    width: 27%;
+    margin: 1.5rem 1.2rem;
+    position: relative;
+    transition: all 400ms ease-in-out;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.project-card .overlay {
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(0,0,0, 0.1), rgb(0,0,0, 0.7) );
+    transition: all 400ms ease-in-out;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 5px;
+}
+
+.project-card:hover .overlay{
+    opacity: 1;
+}
+
+.project-card a p {
+    color: rgb(218, 218, 218);
+    font-size: 1.25rem;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+
+    .project-card {
+        width: 40%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .projects {
+        width: 95%;
+    }
+}
+
+@media (max-width: 750px) {
+
+    section.works {
+        margin-top: 3rem;
+    }
+}
+
+
+@media (max-width: 580px) {
+
+    .project-card {
+        width: 65%;
+    }
+
+    .projects {
+        width: 100%;
+    }
+
+    section.works {
+        padding: 3rem 1rem;
+    }
+
+    section.works .container {
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .project-card {
+        width: 75%;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .project-card {
+        width: 85%;
+    }
+}

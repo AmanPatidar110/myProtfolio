@@ -1,0 +1,157 @@
+@import './utils.css';
+
+.about {
+    padding: 15rem 0;
+}
+
+.my-img {
+    height: 450px;
+    justify-content: space-between;
+    padding-right:  5rem;
+}
+
+.my-img img{
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.abt-me {
+    padding-right: 5rem;
+}
+
+div.abt-me h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+div.abt-me h1 span{
+    color: var(--primary);
+}
+
+div.abt-me h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+div.abt-me p {
+    font-family: "lato", sans-serif;
+    color: var(--dark);
+    line-height: 1.9;
+    margin-bottom: 0.8rem;
+}
+
+div.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    transition: all 200ms ease-out;
+}
+
+div.social a:hover {
+    transform: scale(1.1);
+} 
+
+div.social a img {
+    height: 100%;
+    width: 100%;
+}
+
+
+@media (max-width: 1250px) {
+
+    .my-img img{
+        width: 70%;
+    }
+
+
+}
+
+
+@media (max-width: 900px) {
+    .about {
+        padding: 5rem 0;
+    }
+
+    .my-img img{
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .my-img {
+        padding-right: 0;
+        padding: 0 2rem;
+    }
+
+    .my-img img {
+        margin: auto;
+    }
+
+    .my-img img{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .abt-me {
+        padding-right: 0;
+    }
+
+    .about .container, .abt-me, .abt-me-txt  {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding:1rem;
+    }
+     
+    .my-img img{
+        width: 60%;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .about {
+        position: relative;
+    }
+
+    .abt-me-txt h1 {
+        position: absolute;
+        top: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 460px) {
+
+    .my-img img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 360px) {
+.my-img img {
+    width: 100%;
+}
+}
+
+@media (max-width: 320px) {
+    .my-img{
+    height: 400px;
+}
+
+}
+

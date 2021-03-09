@@ -1,0 +1,122 @@
+@import './utils.css';
+
+.contact {
+    margin-top: 10rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card-wrapper .card {
+    margin: 5rem;
+}
+
+.card-wrapper .card img {
+    margin-bottom: 1rem;
+    width: 30%;
+    height: 35%;
+}
+
+.card-wrapper .card h1 {
+    font-weight: 400;
+}
+
+.card-wrapper .card h6 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--card-hover);
+}
+
+section.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+.input-wrapper-2, .input-wrapper-1 {
+    width: 100%;
+}
+
+
+section.contact input, textarea {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    font-family: 'Lato', sans-serif;
+    border: 1px solid rgba(212, 212, 212, 0.616);
+}
+
+.input-wrapper-1 {
+    justify-content: space-between;
+}
+
+.input-wrapper-1 input {
+    width: 48%;
+}
+
+.input-wrapper-2 {
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+
+section.contact input:focus, textarea:focus {
+    outline: none;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+    .card-wrapper .card {
+        margin: 2rem;
+    }
+
+    .card-wrapper .card h1 {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .card-wrapper .card {
+        margin: 0 0.7rem;
+    }
+    .contact {
+        margin-top: 5rem;
+        padding: 0 0.7rem;
+    }
+
+    section.contact form {
+        margin: 1rem 0;
+        width: 80%;
+    }
+}
+
+@media (max-width: 580px) {
+    .contact  .card-wrapper, .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card-wrapper .card {
+        width: 70%;
+        margin: 1.5rem 0;
+    }
+
+    .contact .container {
+        margin-bottom: 1.5rem;
+    }
+}
+
+

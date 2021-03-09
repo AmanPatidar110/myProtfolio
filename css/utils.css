@@ -1,0 +1,68 @@
+:root {
+    --primary: #3dcfd3;
+    --dark: #0e0e11;
+    --light: #262627e5;
+    --card-hover: #161616bd;
+    --secondary: rgba(212, 212, 212, 0.267);
+    --ternary: rgba(212, 212, 212, 0.87);
+    /* --dark: #131313; */
+    /* --dark: #070606; */
+}
+
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.btn {
+    /* margin: 1rem; */
+    width: 10rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--primary);
+    color: var(--dark);
+    cursor: pointer;
+    transition: all 400ms ease-out;
+    border: solid 2px var(--dark);
+}
+
+
+.btn:hover, .btn:active {
+    background-color: var(--dark);
+    color: var(--primary);
+    border: solid 2px var(--primary);
+}
+
+
+
+.hero-btn {
+    width: 11rem;
+    width: 10rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 400ms ease-out;
+    border: solid 2px var(--primary);
+    background-color: var(--dark);
+    color: var(--primary);
+}
+
+.hero-btn:hover {
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
+
+.flex-1 {
+    flex: 1;
+}
+
+.section-heading span {
+    color: var(--primary);
+}
